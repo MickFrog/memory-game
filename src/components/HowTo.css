@@ -1,0 +1,10 @@
+.instr {
+    background-color: var(--howToBg);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 15%;
+    font-size: var(--textSize);
+}

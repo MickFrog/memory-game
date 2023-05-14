@@ -2,6 +2,8 @@
 
 :root{
   --headerBg: #140021;
+  --howToBg: #560090;
+  --textSize: 1.2rem;
 }
 
 body {
