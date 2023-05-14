@@ -1,0 +1,17 @@
+.footer-comp {
+    background-color: var(--howToBg);
+    color: white;
+    font-size: var(--textSize);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-comp > a {
+    color: white;
+}
+
+.footer-comp > a:hover {
+    color: var(--headerBg);
+}
