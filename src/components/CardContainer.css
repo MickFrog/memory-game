@@ -1,0 +1,8 @@
+.card-container {
+    background-image: url(../assets/containerBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
