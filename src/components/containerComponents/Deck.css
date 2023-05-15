@@ -1,0 +1,8 @@
+.card-deck {
+    margin-top: 2rem;
+    padding: 0 20%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
