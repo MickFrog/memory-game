@@ -1,0 +1,34 @@
+.scores-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    gap: 2rem;
+    margin: var(--myPadding);
+}
+
+.score-card {
+    color: white;
+    font-size: var(--scoreSize);
+    padding: var(--myPadding);
+    margin: 0 var(--myPadding);
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+
+    border-radius: 1.5rem;
+    box-shadow: 0px 2px 15px #84DCCF;
+}
+
+.max-score {
+    background-color: #b0235f;
+}
+
+.current-score {
+    background-color: #d84a64;
+}
+
+.best-score {
+    background-color: #fa7268;
+}

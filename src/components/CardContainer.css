@@ -4,5 +4,5 @@
     background-size: cover;
 
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: max-content 9fr;
 }
