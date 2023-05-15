@@ -1,7 +1,25 @@
 .card {
     margin: 1rem;
+    padding: var(--myPadding);
 
-    background-color: black;
+    background-color: #EBEAEA;
+    border-radius: var(--myPadding);
+
     width: 220px;
     height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 300ms;
+}
+
+.card:hover {
+    margin-top: -2px;
+}
+
+.card > img {
+    width: 100%;
+    color: white;
 }
