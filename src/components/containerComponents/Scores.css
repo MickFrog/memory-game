@@ -17,8 +17,7 @@
     display: flex;
     align-items: center;
 
-    border-radius: 1.5rem;
-    box-shadow: 0px 2px 15px #84DCCF;
+    border-radius: 0 1.5rem;
 }
 
 .max-score {
