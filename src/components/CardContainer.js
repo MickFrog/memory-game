@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './CardContainer.css'
 import Scores from "./containerComponents/Scores";
 import Deck from "./containerComponents/Deck";
@@ -16,6 +16,7 @@ function generateNums() {
 }
 
 //validate generated nums
+//only prevents same images being next to each other
 function validateNums(arr) {
     for(let i = 0; i < arr.length; i++) {
         if(arr[i] === arr[i+1]) return false;
@@ -38,10 +39,18 @@ function getValidNums() {
 }
 
 const CardContainer = () => {
+
+    const [nums, setNums] = useState(getValidNums());
+
+    //handler for resetting the nums
+    const regenerateNums = () => {
+        setNums(getValidNums());
+    }
+
     return (
         <div className="card-container">
             <Scores />
-            <Deck />          
+            <Deck randoms={nums}/>          
         </div>
     )
 }

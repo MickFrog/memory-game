@@ -2,13 +2,13 @@ import React from "react";
 import './Deck.css'
 import Card from "./Card";
 
-const Deck = () => {
+const Deck = (props) => {
     return (
         <div className="card-deck">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card picNum={props.randoms[0]}/>
+            <Card picNum={props.randoms[1]}/>
+            <Card picNum={props.randoms[2]}/>
+            <Card picNum={props.randoms[3]}/>
         </div>
     )
 }
