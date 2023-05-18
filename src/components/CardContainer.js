@@ -7,46 +7,26 @@ import Deck from "./containerComponents/Deck";
 function generateNums() {
     let finalArr = [];
 
-    for(let i = 0; i < 4; i++) {
+    while(finalArr.length < 4) {
         let num = Math.floor(Math.random() * 20) + 1;
-        finalArr.push(num);
+        
+        //add num to final array if doesn't already exist there.
+        if(!finalArr.includes(num)) {
+            finalArr.push(num);
+        }
     }
     
     return finalArr;
 }
 
-//validate generated nums
-//only prevents same images being next to each other
-function validateNums(arr) {
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] === arr[i+1]) return false;
-    }
-
-    return true;
-}
-
-//get valid 4 numbers
-function getValidNums() {
-    let valid = false;
-    let validArr = [];
-
-    while(!valid) {
-        validArr = generateNums();
-        valid = validateNums(validArr);
-    }
-
-    return validArr;
-}
-
 const CardContainer = () => {
 
-    const [nums, setNums] = useState(getValidNums());
+    const [nums, setNums] = useState(generateNums());
 
     //handler for resetting the nums
     const changeNums = useCallback(() => {
         //get new random values
-        let tempNums = getValidNums();
-        setNums(tempNums);
+        setNums(generateNums());
     }, []);
 
     return (
