@@ -4,8 +4,8 @@ import './Card.css';
 const Card = (props) => {
 
     const handleClick = () => {
-        console.log(props.picNum);
         props.handleClick();
+        props.updateScores(props.picNum);
     }
 
     return (
