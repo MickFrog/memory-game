@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useCallback} from "react";
 import './CardContainer.css'
 import Scores from "./containerComponents/Scores";
 import Deck from "./containerComponents/Deck";
@@ -43,14 +43,16 @@ const CardContainer = () => {
     const [nums, setNums] = useState(getValidNums());
 
     //handler for resetting the nums
-    const regenerateNums = () => {
-        setNums(getValidNums());
-    }
+    const changeNums = useCallback(() => {
+        //get new random values
+        let tempNums = getValidNums();
+        setNums(tempNums);
+    }, []);
 
     return (
         <div className="card-container">
             <Scores />
-            <Deck randoms={nums}/>          
+            <Deck randoms={nums} clickFunc={changeNums}/>
         </div>
     )
 }
