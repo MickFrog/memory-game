@@ -49,7 +49,7 @@ const CardContainer = () => {
         if (scores.current > scores.best) {
             setScores({...scores, best: scores.current});
         }
-        console.log(scores);
+        // console.log(scores);
     }, [scores]);
 
     //handler for resetting the nums
