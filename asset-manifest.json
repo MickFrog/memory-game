@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.ebf1d984.css",
+    "main.js": "/memory-game/static/js/main.9561af51.js",
+    "static/media/cat-5.png": "/memory-game/static/media/cat-5.816597ecf61b4a203f94.png",
+    "static/media/cat-4.png": "/memory-game/static/media/cat-4.95f4a1cf9ffe5ca0e29f.png",
+    "static/media/cat-11.png": "/memory-game/static/media/cat-11.3f3dbe0723dcde9d9a7c.png",
+    "static/media/cat-6.png": "/memory-game/static/media/cat-6.95d600913e47704d5c86.png",
+    "static/media/cat-20.png": "/memory-game/static/media/cat-20.8aadbf85d923547237fa.png",
+    "static/media/cat-12.png": "/memory-game/static/media/cat-12.19e814b4f2b77d9804fd.png",
+    "static/media/cat-9.png": "/memory-game/static/media/cat-9.3bb9d5063423ca2e3427.png",
+    "static/media/cat-17.png": "/memory-game/static/media/cat-17.f136e62879f4421d23c0.png",
+    "static/media/cat-19.png": "/memory-game/static/media/cat-19.d5c83f163dbce5aa0e64.png",
+    "static/media/cat-1.png": "/memory-game/static/media/cat-1.b8c668a24fc33d957927.png",
+    "static/media/cat-13.png": "/memory-game/static/media/cat-13.32c6be9abc74a4bbd894.png",
+    "static/media/cat-7.png": "/memory-game/static/media/cat-7.1160bf311d88be13624a.png",
+    "static/media/cat-10.png": "/memory-game/static/media/cat-10.bb24f66942a9b5f9b9ec.png",
+    "static/media/cat-16.png": "/memory-game/static/media/cat-16.49d976721d3a2b228fc2.png",
+    "static/media/cat-8.png": "/memory-game/static/media/cat-8.c9339adb6ed6b5ff7d76.png",
+    "static/media/cat-15.png": "/memory-game/static/media/cat-15.5f5f6aa23e7e09d180c7.png",
+    "static/media/cat-3.png": "/memory-game/static/media/cat-3.612f586420311d7a7e8f.png",
+    "static/media/cat-2.png": "/memory-game/static/media/cat-2.46f1fbd54aa8bbbc57f7.png",
+    "static/media/cat-14.png": "/memory-game/static/media/cat-14.3738ea8af5a8905edc25.png",
+    "static/media/containerBg.svg": "/memory-game/static/media/containerBg.c64605b18238dabe98be.svg",
+    "index.html": "/memory-game/index.html",
+    "main.ebf1d984.css.map": "/memory-game/static/css/main.ebf1d984.css.map",
+    "main.9561af51.js.map": "/memory-game/static/js/main.9561af51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebf1d984.css",
+    "static/js/main.9561af51.js"
+  ]
+}
