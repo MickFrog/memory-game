@@ -1,18 +1,17 @@
 import React from "react";
-import './Card.css';
+import "./Card.css";
 
-const Card = (props) => {
+const Card = ({ handleClick, updateScores, picNum }) => {
+  const localHandleClick = () => {
+    handleClick();
+    updateScores(picNum);
+  };
 
-    const handleClick = () => {
-        props.handleClick();
-        props.updateScores(props.picNum);
-    }
-
-    return (
-        <div className="card" onClick={handleClick}>
-            <img src={require(`../../assets/cats/cat-${props.picNum}.png`)} alt="cat_pic"/>
-        </div>
-    )
-}
+  return (
+    <div className="card" onClick={localHandleClick}>
+      <img src={require(`../../assets/cats/cat-${picNum}.png`)} alt="cat_pic" />
+    </div>
+  );
+};
 
 export default Card;
